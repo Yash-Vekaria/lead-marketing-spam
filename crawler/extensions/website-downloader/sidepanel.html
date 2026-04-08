@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/wall.2.0.3.js"></script>
+    <title>Side Panel</title>
+  <script type="module" crossorigin src="/chunks/sidepanel-b9r5ici1.js"></script>
+  <link rel="modulepreload" crossorigin href="/chunks/_virtual_wxt-html-plugins-DHuczpQ9.js">
+  <link rel="stylesheet" crossorigin href="/assets/sidepanel-BHW4C_Fa.css">
+</head>
+<body>
+<div class="container" style="position: relative;">
+    <!-- Top-right icon -->
+    <a href="https://onlineapp.pro/paywall/377/customer-portal/get" target="_blank" id="userIconLink" style="display: none;">
+        <img src="/assets/user-interface-Cv8p1vcP.png" alt="Manage Subscription" class="top-right-icon">
+    </a>
+
+    <div id="pin-tip" style="display: none; position: absolute; top: 10px; right: 70px; z-index: 1000;">
+        <div style="display: flex; align-items: center;">
+            <div class="pro-tip-box">
+                Pro Tip
+            </div>
+            <span style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin-left: 8px;">
+            Pin the extension
+        </span>
+            <img src="/assets/img-Dy9YKdfY.png" alt="Pin Extension Arrow" class="arrow-image">
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Floating emoji container -->
+        <div id="emojiContainer"></div>
+
+        <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+            Thank you for your support! <span class="heart-emoji">❤️</span>
+        </div>
+
+        <div id="warningContainer" style="min-height: 30px; text-align: center; margin-bottom: 10px; visibility: visible;">
+            <p id="warningText" style="display: inline; font-family: Arial, sans-serif; font-size: 18px;"></p>
+        </div>
+        <button class="button" id="Download">Download</button>
+        <div id="infoPanel" style="min-height: 70px; margin-top: 10px; text-align: center; visibility: visible; margin-right: 10px; margin-left: 10px;">
+            <p id="infoText" style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin: 0;"></p>
+            <a href="#" id="cancel-link" style="display: none; font-size: 14px;">cancel</a>
+        </div>
+
+        <div class="rating-container" id="ratingContainer" style="visibility: hidden;">
+            <p class="rate-us" style="text-align: center; font-family: arial, sans-serif; font-size: 16px">
+                Rate Us:
+            </p>
+            <div class="full-stars">
+                <div class="rating-group">
+                    <input name="fst" value="5" type="radio" disabled checked>
+                    <label for="fst-1">
+                        <a href="https://forms.gle/aJJJgzRgEMT2Ln1N9" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                            </svg>
+                        </a>
+                    </label>
+                    <input name="fst" id="fst-1" value="1" type="radio">
+                    <label for="fst-2">
+                        <a href="https://forms.gle/aJJJgzRgEMT2Ln1N9" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                            </svg>
+                        </a>
+                    </label>
+                    <input name="fst" id="fst-2" value="2" type="radio">
+                    <label for="fst-3">
+                        <a href="https://forms.gle/aJJJgzRgEMT2Ln1N9" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                            </svg>
+                        </a>
+                    </label>
+                    <input name="fst" id="fst-3" value="3" type="radio">
+                    <label for="fst-4">
+                        <a href="https://chromewebstore.google.com/detail/iaaokenmfgahhlcfbdipjonlkeinadaa/reviews" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                            </svg>
+                        </a>
+                    </label>
+                    <input name="fst" id="fst-4" value="4" type="radio">
+                    <label for="fst-5">
+                        <a href="https://chromewebstore.google.com/detail/iaaokenmfgahhlcfbdipjonlkeinadaa/reviews" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                            </svg>
+                        </a>
+                    </label>
+                    <input name="fst" id="fst-5" value="5" type="radio">
+                </div>
+            </div>
+        </div>
+        <div id="loadingSwitcher" class="loading-switcher" style="margin-top: 20px; text-align: center; height: 150px; width: 280px; transition: height 0.2s ease-out; position: absolute; overflow: hidden;bottom: 25px;">
+            <div id="linkDepthContainer" style="display: none; position: absolute; bottom: 45px; left: 0; right: 0; margin-bottom: 10px;">
+                <label for="linkDepth" style="font-family: Arial, sans-serif; font-size: 14px;">
+                    Link Depth:
+                    <input type="number" id="linkDepth" min="0" max="10" value="1" style="width: 50px; margin-left: 10px; text-align: center;">
+                </label>
+                <div style="margin-top: 8px; color: #856404; background-color: #fff3cd; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-family: Arial, sans-serif; max-width: 250px; margin-left: auto; margin-right: auto;">
+                    The download may take longer to complete. Links to other websites will not be downloaded.
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 0; font-family: Arial, sans-serif; font-size: 14px; position: absolute; bottom: 10px; left: 0; right: 0;">
+                <div style="position: relative;">
+                    <button id="singlePageBtn" class="toggle-btn active" style="border-radius: 4px 0 0 4px; border: 1px solid #ccc; padding: 8px 16px; cursor: pointer; background-color: white;">
+                        Single Page
+                    </button>
+                </div>
+                <button id="multiPageBtn" class="toggle-btn" style="border-radius: 0 4px 4px 0; border: 1px solid #ccc; border-left: none; padding: 8px 16px; cursor: pointer; background-color: white;">
+                    Multi Page
+                </button>
+            </div>
+        </div>
+        <div class="bottom-buttons-container">
+            <div class="bottom-buttons-left">
+                <div id="shareButton" class="bottom-button">
+                    <img src="/assets/share-C0Fj8I8i.png" alt="Share" class="bottom-icon">
+                    <span>Share</span>
+                </div>
+                <div class="bottom-button support-button">
+                    <a href="mailto:sup@website-download.help" class="support-button-link">
+                        <img src="/assets/mail-CoTVKf5L.png" alt="Support" class="bottom-icon">
+                        <span>Support</span>
+                    </a>
+                </div>
+            </div>
+            <div id="restoreAccountLink" class="bottom-button">
+                <a href="https://onlineapp.pro/paywall/377/customer-portal/get" target="_blank">Restore account</a>
+            </div>
+        </div>
+        <div id="page-initialized-marker" style="display: none;" data-test="loading"></div>
+    </div>
+</div>
+</body>
+</html>
