@@ -1,0 +1,36 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bee-queue": "^1.7.1",
+    "bluebird": "^3.7.2",
+    "bs58": "^5.0.0",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "csv-parser": "^3.0.0",
+    "date-fns": "^3.3.1",
+    "hash-wasm": "^4.12.0",
+    "hi-base32": "^0.5.1",
+    "i": "^0.3.7",
+    "lz-string": "^1.5.0",
+    "lzwcompress": "^1.1.0",
+    "murmurhash3js-revisited": "^3.0.0",
+    "ps-node": "^0.1.6",
+    "psl": "^1.9.0",
+    "puppeteer": "^23.11.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "tldjs": "^2.3.1",
+    "tldts": "^6.1.16",
+    "utf8": "^3.0.0"
+  }
+}
