@@ -1,3 +1,11 @@
+This repository contains artifact for the paper:
+
+## Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem
+
+```
+Vekaria, Yash, Rishab Nithyanand, and Zubair Shafiq. "Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem." In 2026 IEEE Symposium on Security and Privacy (SP), IEEE, 2026.
+```
+
 
 ### Clone this Repository
 Run 
