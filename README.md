@@ -3,7 +3,13 @@ This repository contains artifact for the paper:
 ## Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem
 
 ```
-Vekaria, Yash, Rishab Nithyanand, and Zubair Shafiq. "Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem." In 2026 IEEE Symposium on Security and Privacy (SP), IEEE, 2026.
+@inproceedings{vekaria2026understanding,
+  title={The inventory is dark and full of misinformation: Understanding ad inventory pooling in the ad-tech supply chain},
+  author={Vekaria, Yash and Demir, Nurullah and Kollnig, Konrad and Shafiq, Zubair},
+  booktitle={2026 IEEE Symposium on Security and Privacy (SP)},
+  year={2026},
+  organization={IEEE}
+}
 ```
 
 
