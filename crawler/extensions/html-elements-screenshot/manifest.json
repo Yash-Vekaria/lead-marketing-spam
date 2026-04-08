@@ -1,0 +1,51 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"version": "0.1.5",
+	"manifest_version": 3,
+	"offline_enabled": true,
+	"name": "HTML Elements Screenshot",
+	"optional_host_permissions": ["*://*/*"],
+	"optional_permissions": ["declarativeNetRequestWithHostAccess"],
+	"description": "Easily remove desired HTML5 elements with just one click!",
+	"homepage_url": "https://mybrowseraddon.com/html-elements-screenshot.html",
+  "commands": {
+    "_execute_action": {}
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "data/options/options.html"
+  },
+  "permissions": [
+    "storage", 
+    "scripting", 
+    "activeTab"
+  ],
+  "web_accessible_resources": [{
+    "matches": ["*://*/*"],
+    "resources": [
+      "data/content_script/inject.css",
+      "data/content_script/resources/error.png",
+      "data/content_script/resources/loader.svg"
+    ]
+  }],
+	"action": {
+		"default_title": "HTML Elements Screenshot",
+		"default_icon": {
+			"16": "data/icons/16.png",
+			"32": "data/icons/32.png",
+			"48": "data/icons/48.png",
+			"64": "data/icons/64.png"
+		}
+	},
+	"icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "48": "data/icons/48.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png"
+  }
+}
