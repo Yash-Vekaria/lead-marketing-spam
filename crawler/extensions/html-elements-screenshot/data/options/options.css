@@ -1,0 +1,134 @@
+body {
+  border: 0;
+  padding: 0;
+  color: #000;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 13px;
+  max-width: 1080px;
+  font-family: arial, sans-serif;
+}
+
+table {
+  border: 0;
+  width: 100%;
+  border-spacing: 10px;
+}
+
+table tr td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  transition: 300ms ease all;
+}
+
+.container {
+  border: 0;
+  padding: 0;
+  margin: auto;
+  background-color: #fff;
+}
+
+.container tr:has(input[disabled]) {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+}
+
+.title {
+  width: 100%;
+}
+
+.title p {
+  margin: 0;
+  border: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.title .note {
+  color: #555;
+  display: block;
+  font-size: 13px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+.option {
+  padding: 10px;
+  text-align: right;
+}
+
+.option input[type='checkbox'] {
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.option input[type='number'] {
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-indent: 10px;
+  font-family: monospace;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+.option input[type='color'] {
+  margin: 0;
+  padding: 0;
+  width: 98px;
+  height: 42px;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+.option input[type='color']::-moz-color-swatch {
+  border: none;
+}
+
+.option input[type='color']::-webkit-color-swatch {
+  border: none;
+}
+
+.logo {
+  width: 100%;
+  height: 128px;
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+  background: url('../icons/128.png') no-repeat center center;
+  background-size: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    color: #ebebeb;
+    color-scheme: dark;
+    background-color: #1e1e1e;
+  }
+  .container {
+    color: #ebebeb;
+    background-color: #1e1e1e;
+  }
+  .title .note {
+    color: #afafaf;
+  }
+  .option input[type='color'],
+  .option input[type='number'] {
+    border-color: rgb(255 255 255 / 25%);
+  }
+  .logo {
+    border-bottom-color: rgb(255 255 255 / 10%);
+  }
+}

@@ -1,0 +1,108 @@
+html, body, body *:not(.lightbox-container) * {
+  cursor: crosshair !important;
+}
+
+.lightbox-container {
+  opacity: 0;
+  display: none;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  cursor: default !important;
+  border-radius: 0 !important;
+  z-index: 2147483647 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgba(0,0,0,0.80) !important;
+  box-shadow: inset 0 0 300px #020202 !important;
+  transition: 700ms opacity ease-in-out !important;
+}
+
+.lightbox-container img:not(.lightbox-loader) {
+  height: auto !important;
+  max-height: 620px !important;
+  max-width: 1080px !important;
+  outline: solid 1px #737373 !important;
+}
+
+.lightbox-loader {
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: 32px !important;
+  outline: none !important;
+  position: absolute !important;
+  top: calc(50% - 16px) !important;
+}
+
+.lightbox-close {
+  border: 0 !important;
+  margin: 0 !important;
+  top: 16px !important;
+  left: 16px !important;
+  padding: 0 !important;
+  color: #fff !important;
+  width: 42px !important;
+  height: 42px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  border-radius: 0 !important;
+  line-height: 44px !important;
+  user-select: none !important;
+  text-align: center !important;
+  position: absolute !important;
+  font-family: monospace !important;
+  transition: 300ms ease all !important;
+  background-color: transparent !important;
+}
+
+.lightbox-download {
+  border: 0 !important;
+  margin: 0 !important;
+  top: 64px !important;
+  left: 16px !important;
+  padding: 0 !important;
+  color: #fff !important;
+  width: 42px !important;
+  height: 42px !important;
+  opacity: 0.9 !important;
+  cursor: pointer !important;
+  font-size: 22px !important;
+  border-radius: 0 !important;
+  line-height: 42px !important;
+  user-select: none !important;
+  text-align: center !important;
+  position: absolute !important;
+  font-family: monospace !important;
+  transition: 300ms ease all !important;
+  background-color: transparent !important;
+}
+
+.lightbox-close[render='true'],
+.lightbox-download[render='true'] {
+  display: block !important;
+}
+
+.lightbox-close[render='false'],
+.lightbox-download[render='false'] {
+  display: none !important;
+}
+
+.lightbox-close:hover {
+  background-color: #c33030 !important;
+}
+
+.lightbox-download:hover {
+  opacity: 1.0 !important;
+  background-color: #000 !important;
+}
+
+*[html-elements-screenshot-mouseover-effect] {
+  transition: 300ms ease background-color !important;
+  background-color: rgba(187, 62, 133, 0.45) !important;
+}
